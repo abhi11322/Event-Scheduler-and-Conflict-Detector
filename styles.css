@@ -1,0 +1,129 @@
+/* Custom Styles */
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+
+.event-block {
+  position: absolute;
+  left: 80px; 
+  right: 8px;
+  cursor: grab;
+  padding: 12px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  user-select: none;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.event-block:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.15);
+}
+
+.event-block:active {
+  cursor: grabbing;
+  z-index: 20;
+  opacity: 0.9;
+  transform: scale(1.06);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.event-normal {
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+}
+
+.event-conflict {
+  background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+}
+
+.event-outside {
+  border: 4px solid #fbbf24; /* yellow-400 */
+}
+
+
+.event-name {
+  font-weight: 700;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+}
+
+.event-time {
+  font-size: 0.75rem;
+  opacity: 0.85;
+  font-feature-settings: 'tnum';
+}
+
+.time-label {
+  position: absolute;
+  right: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.75rem;
+  user-select: none;
+}
+
+
+.timeline-hour-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px dotted #d1d5db;
+  pointer-events: none;
+}
+
+
+.toast {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideInRight 0.3s ease, fadeOut 0.3s ease 2.7s;
+  pointer-events: none;
+  user-select: none;
+}
+
+.toast-success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.toast-error {
+  background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
