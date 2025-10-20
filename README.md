@@ -100,7 +100,7 @@ Conflict detection runs automatically after every change.
 
 ## 📄 Screenshot
 
-<img width="1143" height="850" alt="image" src="https://github.com/user-attachments/assets/7290e3d6-602a-4859-91bd-57ee0b160d43" />
+<img width="1143" height="850" alt="image" src="https://github.com/user-attachments/assets/6cd49204-488f-4c73-9f10-d2d46d1e7ad9" />
 
 ---
 
