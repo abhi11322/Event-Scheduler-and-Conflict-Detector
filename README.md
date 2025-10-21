@@ -10,6 +10,12 @@ The interface is clean, responsive, and built using **Tailwind CSS**.
 
 ---
 
+## 🚀Deployment
+
+https://abhi11322.github.io/Event-Scheduler-and-Conflict-Detector/
+
+---
+
 ## ✨ Features
 
 - **Customizable Working Hours**  
